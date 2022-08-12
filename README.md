@@ -6,7 +6,7 @@
 - [Http package](https://pub.dev/packages/http)
 - [Shimmer package](https://pub.dev/packages/shimmer)
 
-### yet not finished
+###Project yet not finished
 
 
 For help getting started with Flutter development, view the
