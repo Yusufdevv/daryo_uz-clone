@@ -33,14 +33,14 @@ class _AppDrawerHeaderState extends State<AppDrawerHeader> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Toshkent',
-                  style: const TextStyle(color: Colors.white, fontSize: 16)),
+              const Text('Toshkent',
+                  style:  TextStyle(color: Colors.white, fontSize: 16)),
               Row(
-                children: [
+                children:const [
                   Icon(Icons.cloud_queue_sharp, color: Colors.white),
-                  const SizedBox(width: 4),
+                   SizedBox(width: 4),
                   Text('+12.0°',
-                      style: const TextStyle(color: Colors.white, fontSize: 16))
+                      style:  TextStyle(color: Colors.white, fontSize: 16))
                 ],
               ),
             ],

@@ -16,7 +16,7 @@ class _AppDrawerState extends State<AppDrawer> {
       elevation: 0,
       backgroundColor: Colors.white,
       child: Column(
-        children: [
+        children:const [
           AppDrawerHeader(),
           AppDrawerList(),
         ],

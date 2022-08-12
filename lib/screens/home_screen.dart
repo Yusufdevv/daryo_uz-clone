@@ -17,6 +17,9 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Daryo'),
+          actions: [
+            IconButton(onPressed: () {}, icon:const Icon(Icons.search))
+          ],
           bottom: const TabBar(isScrollable: true, tabs: [
             Tab(child: Text("SO'NGGI YANGILIKLAR")),
             Tab(child: Text("ASOSIY YANGILIKLAR")),

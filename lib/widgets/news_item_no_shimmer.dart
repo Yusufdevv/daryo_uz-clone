@@ -1,13 +1,14 @@
-import 'package:daryo_uz_clone/models/new.dart';
+import 'package:daryo_uz_clone/models/articles.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class NewsItemNoShimmer extends StatelessWidget {
   const NewsItemNoShimmer({
     Key? key,
-    required this.newItem,
+    required this.article,
   }) : super(key: key);
 
-  final New newItem;
+  final Article article;
 
   @override
   Widget build(BuildContext context) {
@@ -25,15 +26,15 @@ class NewsItemNoShimmer extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Text('${newItem.time} | ${newItem.date} | ',
+                    Text(DateFormat('hh:mm | dd MMMM yyyy | ' ).format(article.publishedAt!),
                         style: const TextStyle(color: Colors.grey)),
                     Icon(Icons.visibility_outlined,
                         color: Colors.blue[300]),
                     const SizedBox(
                       width: 4,
                     ),
-                    Text(newItem.watchCount,
-                        style: TextStyle(color: Colors.blue[300]))
+                    // Text(article.watchCount,
+                    //     style: TextStyle(color: Colors.blue[300]))
                   ],
                 ),
               ],
@@ -42,10 +43,10 @@ class NewsItemNoShimmer extends StatelessWidget {
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Image.network(newItem.imageUrl, width: 140),
-                const SizedBox(width: 20),
+                Image.network(article.urlToImage ?? '', width: 120,),
+                const SizedBox(width: 10),
                 Expanded(
-                    child: Text(newItem.title,
+                    child: Text(article.title!,
                         style: const TextStyle(
                             fontWeight: FontWeight.w500, height: 1.2))),
               ],
