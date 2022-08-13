@@ -5,6 +5,7 @@
 - [News Api from newsapi.org](https://newsapi.org/)
 - [Http package](https://pub.dev/packages/http)
 - [Shimmer package](https://pub.dev/packages/shimmer)
+- [Provider package](https://pub.dev/packages/provider)
 
 ###Project yet not finished
 
