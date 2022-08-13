@@ -1,5 +1,6 @@
 import 'package:daryo_uz_clone/widgets/drawer_widgets/currency_row.dart';
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 class AppDrawerHeader extends StatefulWidget {
   const AppDrawerHeader({Key? key}) : super(key: key);
@@ -18,15 +19,15 @@ class _AppDrawerHeaderState extends State<AppDrawerHeader> {
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              const Text(
+            children: const [
+              Text(
                 'Daryo',
                 style: TextStyle(fontSize: 24, color: Colors.white),
               ),
-              const SizedBox(
-                width: 17,
+              SizedBox(
+                width: 25,
               ),
-              selectLang(),
+              SelectLang(),
             ],
           ),
           const SizedBox(height: 40),
@@ -34,13 +35,13 @@ class _AppDrawerHeaderState extends State<AppDrawerHeader> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               const Text('Toshkent',
-                  style:  TextStyle(color: Colors.white, fontSize: 16)),
+                  style: TextStyle(color: Colors.white, fontSize: 16)),
               Row(
-                children:const [
+                children: const [
                   Icon(Icons.cloud_queue_sharp, color: Colors.white),
-                   SizedBox(width: 4),
+                  SizedBox(width: 4),
                   Text('+12.0°',
-                      style:  TextStyle(color: Colors.white, fontSize: 16))
+                      style: TextStyle(color: Colors.white, fontSize: 16))
                 ],
               ),
             ],
@@ -67,17 +68,26 @@ class _AppDrawerHeaderState extends State<AppDrawerHeader> {
       ),
     );
   }
+}
 
-  List<bool> isSelected = [false, true];
+List<bool> isSelected = [true, false];
 
-  Widget selectLang() {
+class SelectLang extends StatefulWidget {
+  const SelectLang({Key? key}) : super(key: key);
+
+  @override
+  State<SelectLang> createState() => _SelectLangState();
+}
+
+class _SelectLangState extends State<SelectLang> {
+  @override
+  Widget build(BuildContext context) {
     return Expanded(
       child: Container(
         height: 30,
         width: 180,
         decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius:  BorderRadius.circular(30)),
+            color: Colors.white, borderRadius: BorderRadius.circular(30)),
         child: ToggleButtons(
           selectedBorderColor: Colors.transparent,
           borderColor: Colors.transparent,
@@ -87,9 +97,12 @@ class _AppDrawerHeaderState extends State<AppDrawerHeader> {
               if (index == 0) {
                 isSelected[0] = true;
                 isSelected[1] = false;
+                context.setLocale(const Locale('uz', 'UZ'));
+                
               } else {
                 isSelected[1] = true;
                 isSelected[0] = false;
+                context.setLocale(const Locale('ru', 'RU'));
               }
             });
           },
@@ -103,8 +116,11 @@ class _AppDrawerHeaderState extends State<AppDrawerHeader> {
               height: 30,
               width: 90,
               alignment: Alignment.center,
-              child: Text("Lotincha", style: TextStyle(
-                color: isSelected[0] ? Colors.blue : Colors.white),),
+              child: Text(
+                "Lotincha",
+                style: TextStyle(
+                    color: isSelected[0] ? Colors.blue : Colors.white),
+              ),
             ),
             Container(
               decoration: BoxDecoration(
@@ -115,8 +131,11 @@ class _AppDrawerHeaderState extends State<AppDrawerHeader> {
               height: 30,
               width: 90,
               alignment: Alignment.center,
-              child: Text("Kirilcha", style: TextStyle(
-                color: isSelected[1] ? Colors.blue : Colors.white),),
+              child: Text(
+                "Kirilcha",
+                style: TextStyle(
+                    color: isSelected[1] ? Colors.blue : Colors.white),
+              ),
             ),
           ],
         ),
