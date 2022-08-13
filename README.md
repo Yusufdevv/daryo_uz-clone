@@ -7,7 +7,11 @@
 - [Shimmer package](https://pub.dev/packages/shimmer)
 - [Provider package](https://pub.dev/packages/provider)
 
-###Project yet not finished
+##Project yet not finished
+## Tasks to be done: 
+### add other screens
+### easy localizatioin
+
 
 
 For help getting started with Flutter development, view the
