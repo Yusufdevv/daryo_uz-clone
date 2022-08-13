@@ -33,8 +33,8 @@ class NewsItemNoShimmer extends StatelessWidget {
                     const SizedBox(
                       width: 4,
                     ),
-                    // Text(article.watchCount,
-                    //     style: TextStyle(color: Colors.blue[300]))
+                    Text('2022',
+                        style: TextStyle(color: Colors.blue[300]))
                   ],
                 ),
               ],
@@ -43,7 +43,10 @@ class NewsItemNoShimmer extends StatelessWidget {
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Image.network(article.urlToImage ?? '', width: 120,),
+                Image.network(article.urlToImage ?? 'https://daryo.uz/cache/2022/08/thumb-ballon-door-1011x674.jpeg', width: 120,
+                errorBuilder: ((context, error, stackTrace) {
+                  return  Image.network('https://daryo.uz/cache/2022/08/thumb-ballon-door-1011x674.jpeg', width: 120,);
+                }),),
                 const SizedBox(width: 10),
                 Expanded(
                     child: Text(article.title!,

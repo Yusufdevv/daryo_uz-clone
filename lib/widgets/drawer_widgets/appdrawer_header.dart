@@ -24,7 +24,7 @@ class _AppDrawerHeaderState extends State<AppDrawerHeader> {
                 style: TextStyle(fontSize: 24, color: Colors.white),
               ),
               const SizedBox(
-                width: 25,
+                width: 17,
               ),
               selectLang(),
             ],
