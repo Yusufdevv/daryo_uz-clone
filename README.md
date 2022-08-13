@@ -9,8 +9,8 @@
 
 ##Project yet not finished
 ## Tasks to be done: 
-### add other screens
-### easy localizatioin
+### -add other screens
+### -easy localizatioin
 
 
 
