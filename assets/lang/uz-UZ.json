@@ -1,6 +1,24 @@
 {
-    "city": "Toshkent",
-    "latest": "SO'NGGI YANGILIKLAR",
-    "main": "ASOSIY YANGILIKLAR",
-    "most": "ENG KO'P O'QILGANLAR"
+    "shahar": "Toshkent",
+    "oxirgi": "SO'NGGI YANGILIKLAR",
+    "asosiy": "ASOSIY YANGILIKLAR",
+    "eng ko'p": "ENG KO'P O'QILGANLAR",
+    "qollanma ekrani" : "Qollanma ekranini ko'rsatish",
+    "songgi": "So'nggi yangiliklar",
+    "mahalliy" : "Mahalliy",
+    "dunyo" : "Dunyo",
+    "texnologiyalar" : "Texnologiyalar",
+    "tanlangan" : "Tanlangan",
+    "madaniyat" : "Madaniyat",
+    "avto" : "Avto",
+    "sport" : "Sport",
+    "foto" : "Foto",
+    "lifestyle" : "LifeStyle",
+    "kolumnistlar" : "Kolumnistlar",
+    "afisha" : "Afisha",
+    "valyuta kursi" : "Valyuta kursi",
+    "ob-havo" : "Ob-havo",
+    "foydalanish" : "Foydalanish shartlari",
+    "daryo haqida" : "Daryo haqida",
+    "sozlashlar" : "Sozlashlar"
 }

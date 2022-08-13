@@ -32,9 +32,9 @@ class _HomeScreenState extends State<HomeScreen> {
             IconButton(onPressed: () {}, icon: const Icon(Icons.search))
           ],
           bottom: TabBar(isScrollable: true, tabs: [
-            Tab(child: Text("latest".tr())),
-            Tab(child: Text("main".tr())),
-            Tab(child: Text("most".tr())),
+            Tab(child: Text("oxirgi".tr())),
+            Tab(child: Text("asosiy".tr())),
+            Tab(child: Text("eng ko'p".tr())),
           ]),
         ),
         body: const TabBarView(children: [

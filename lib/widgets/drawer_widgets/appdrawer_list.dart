@@ -1,34 +1,39 @@
 import 'package:flutter/material.dart';
-
-class AppDrawerList extends StatelessWidget {
+import 'package:easy_localization/easy_localization.dart';
+class AppDrawerList extends StatefulWidget {
   const AppDrawerList({Key? key}) : super(key: key);
 
+  @override
+  State<AppDrawerList> createState() => _AppDrawerListState();
+}
+
+class _AppDrawerListState extends State<AppDrawerList> {
   @override
   Widget build(BuildContext context) {
     return Expanded(
         child: SingleChildScrollView(
           child: Column(
               children: [
-          CategoryItem("Qo'llanma ekranini ko'rsatish", containerColor: Colors.yellow.shade200,),
-          CategoryItem("So'nggi yangiliklar"),
-          CategoryItem("Mahalliy"),
-          CategoryItem("Dunyo"),
-          CategoryItem("Texnologiyalar"),
+          CategoryItem("qollanma ekrani".tr(), containerColor: Colors.yellow.shade200,),
+          CategoryItem("songgi".tr()),
+          CategoryItem("mahalliy".tr()),
+          CategoryItem("dunyo".tr()),
+          CategoryItem("texnologiyalar".tr()),
           const Divider(thickness: 1, ),
-          CategoryItem("Tanlangan xabarlar", color: Colors.green),
+          CategoryItem("tanlangan".tr(), color: Colors.green),
           const Divider(thickness: 1),
-          CategoryItem("Madaniyat"),
-          CategoryItem("Avto"),
-          CategoryItem("Sport"),
-          CategoryItem("Foto"),
-          CategoryItem("LifeStyle"),
-          CategoryItem("Kolumnistlar"),
-          CategoryItem("Afisha", containerColor: Colors.grey[200]!,),
-          CategoryItem("Valyutalar kursi", containerColor: Colors.grey[200]!,),
-          CategoryItem("Ob-havo", containerColor: Colors.grey[200]!,),
-          CategoryItem("Foydalanish shartlari", containerColor: Colors.grey[200]!,),
-          CategoryItem('"Daryo" haqida', containerColor: Colors.grey[200]!,),
-          CategoryItem('Sozlashlar', containerColor: Colors.grey[200]!,),
+          CategoryItem("madaniyat".tr()),
+          CategoryItem("avto".tr()),
+          CategoryItem("sport".tr()),
+          CategoryItem("foto".tr()),
+          CategoryItem("kolumnistlar".tr()),
+          CategoryItem("lifestyle".tr()),
+          CategoryItem("afisha".tr(), containerColor: Colors.grey[200]!,),
+          CategoryItem("valyuta kursi".tr(), containerColor: Colors.grey[200]!,),
+          CategoryItem("ob-havo".tr(), containerColor: Colors.grey[200]!,),
+          CategoryItem("foydalanish".tr(), containerColor: Colors.grey[200]!,),
+          CategoryItem("daryo haqida".tr(), containerColor: Colors.grey[200]!,),
+          CategoryItem("sozlashlar".tr(), containerColor: Colors.grey[200]!,),
               ],
             ),
         ));

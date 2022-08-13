@@ -34,8 +34,8 @@ class _AppDrawerHeaderState extends State<AppDrawerHeader> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              const Text('Toshkent',
-                  style: TextStyle(color: Colors.white, fontSize: 16)),
+               Text("shahar".tr(),
+                  style:const TextStyle(color: Colors.white, fontSize: 16)),
               Row(
                 children: const [
                   Icon(Icons.cloud_queue_sharp, color: Colors.white),
@@ -98,7 +98,7 @@ class _SelectLangState extends State<SelectLang> {
                 isSelected[0] = true;
                 isSelected[1] = false;
                 context.setLocale(const Locale('uz', 'UZ'));
-                
+
               } else {
                 isSelected[1] = true;
                 isSelected[0] = false;

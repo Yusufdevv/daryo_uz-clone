@@ -1,6 +1,24 @@
 {
-    "city": "Ташкент",
-    "latest": "ПОСЛЕДНИЕ НОВОСТИ",
-    "main": "ГЛАВНАЯ НОВОСТИ",
-    "most": "САМЫЕ ЧИТАЕМЫЕ"
+    "shahar": "Тошкент",
+    "oxirgi": "Сўнгги янгиликлар",
+    "asosiy": "AСОСИЙ ЙAНГИЛИКЛAР",
+    "eng ko'p": "ЭНГ КЎП ЎҚИЛГAНЛAР",
+    "qollanma ekrani" : "Қўлланма экранини кўрсатиш",
+    "songgi": "Сўнгги янгиликлар",
+    "mahalliy" : "Маҳаллий",
+    "dunyo" : "Дунё",
+    "texnologiyalar" : "Технологиялар",
+    "tanlangan" : "Танланган",
+    "madaniyat" : "Маданият",
+    "avto" : "Aвто",
+    "sport" : "Спорт",
+    "foto" : "Фото",
+    "lifestyle" : "ЛифеСтйле",
+    "kolumnistlar" : "Колумнистлар",
+    "afisha" : "Aфиша",
+    "valyuta kursi" : "Валюта курси",
+    "ob-havo" : "Об-ҳаво",
+    "foydalanish" : "Фойдаланиш шартлари",
+    "daryo haqida" : "Дарё ҳақида",
+    "sozlashlar" : "Созлашлар"
   }
